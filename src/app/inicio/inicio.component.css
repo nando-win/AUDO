@@ -1,0 +1,64 @@
+html, body {
+        height: 100%;
+    }
+
+html {
+    /* text-align: center; */
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f4f6f8;
+    padding-top: 0%
+}
+.btEntrar {
+    background-color: rgb(187, 187, 255);
+    color: white;
+    border-radius: 30px;
+    width: 160px;
+    height: 60px;
+    font-size: 20px
+}
+
+button:hover {
+    background-color: #3b3bff
+}
+
+div, mat-card {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.mat-card {
+    background-color: #f4f6f8;
+    box-shadow: none
+}
+
+.footer {
+    margin-top: 50px;
+    width: 50%;
+    text-align: left
+}
+
+img {
+    margin-bottom: 10%;
+    /* margin-top: -50% */
+}
+
+.mat-card-content {
+    width: 100%
+}
+
+.mat-form-field {
+    width: 80%
+}
+
+mat-card-actions {
+    margin-top: 10%
+}
