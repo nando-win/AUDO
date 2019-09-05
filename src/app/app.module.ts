@@ -7,28 +7,30 @@ import { InicioComponent } from './inicio/inicio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatInputModule, MatProgressSpinnerModule,
-  MatCardModule, MatMenuModule, MatIconModule } from '@angular/material';
+  MatCardModule, MatMenuModule, MatIconModule, MatExpansionModule, MatOption, MatOptionModule, MatSelectModule } from '@angular/material';
 import { ListaComponent } from './lista/lista.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    ListaComponent
+    ListaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatInputModule, MatProgressSpinnerModule,
-    MatCardModule, MatMenuModule, MatIconModule,
+    MatCardModule, MatMenuModule, MatIconModule, MatExpansionModule, MatOptionModule, MatSelectModule,
+    FormsModule
   ],
   exports: [
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatInputModule, MatProgressSpinnerModule,
-    MatCardModule, MatMenuModule, MatIconModule,
+    MatCardModule, MatMenuModule, MatIconModule, MatExpansionModule, MatOptionModule, MatSelectModule,
   ],
   providers: [],
-  bootstrap: [InicioComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

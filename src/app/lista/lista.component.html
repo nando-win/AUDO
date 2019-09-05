@@ -1,1 +1,82 @@
-<p>lista works!</p>
+<html>
+    <header>
+        <div><img *ngIf="isMobileResolution" class="img" src="../../assets/logo.png" alt=""></div>
+        <!-- <div class="medico">Medico</div> -->
+        <div><mat-select placeholder="Nome" [(ngModel)]="ListaComponent" name="medico">
+            <mat-option *ngFor="let medico of medicos" [value]="medico.nome">
+                {{medico.nome}}
+            </mat-option>
+        </mat-select>
+    </div>
+        <div><button *ngIf="isMobileResolution" class="sair" mat-button>Sair</button></div>
+    </header>
+
+    <body>
+        <p class="mExames">Meus Exames</p>
+
+        <mat-accordion>
+            <!-- <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    Exame
+                </mat-expansion-panel-header>
+                    <button mat-button>VER LAUDO</button>
+
+                    <button mat-button>BAIXAR IMAGENS</button>
+            </mat-expansion-panel> -->
+
+            <mat-expansion-panel expandedHeight>
+                <mat-expansion-panel-header>
+                    <mat-panel-description>
+                        Data
+                    </mat-panel-description>
+                    <mat-panel-description class="nomeExame">
+                        Nome do exame
+                    </mat-panel-description>
+                    <mat-panel-description class="nomeMedico">
+                        Nome do Medico
+                    </mat-panel-description>
+                  <!-- <mat-panel-title>
+                    Nome do Exame
+                  </mat-panel-title> -->
+                  <!-- <mat-panel-description>
+                    <div>Nome do Medico</div>
+                    
+                  </mat-panel-description> -->
+                  <!-- <div style="color: grey; padding-right: 10px">Mais Detalhes</div> -->
+                </mat-expansion-panel-header>
+            
+                <!-- <mat-form-field> -->
+                  <!-- <input matInput placeholder="First name"> -->
+                  <button mat-button>VER LAUDO</button>
+                <!-- </mat-form-field> -->
+                
+                <!-- <mat-form-field> -->
+                  <!-- <input matInput type="number" min="1" placeholder="Age"> -->
+                  <button mat-button>BAIXAR IMAGENS</button>
+                <!-- </mat-form-field> -->
+                <!-- <mat-action-row>
+                  <button mat-button color="primary" (click)="nextStep()">Next</button>
+                </mat-action-row> -->
+              </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-description>
+                    Data
+                </mat-panel-description>
+                <mat-panel-description>
+                    Nome do exame
+                </mat-panel-description>
+                <mat-panel-description>
+                    Nome do Medico
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            content
+        </mat-expansion-panel>
+    </body>
+
+    <footer class="footer">
+        audo
+    </footer>
+</html>

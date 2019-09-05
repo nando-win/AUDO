@@ -1,15 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.css']
 })
+
+@Injectable()
 export class ListaComponent implements OnInit {
 
-  constructor() { }
+  private isMobileResolution: boolean;
+
+medicos = [
+    {nome: 'Fernando'},
+    {nome: 'Winston'},
+  ];
+
+  medicoSelecionado;
+
+  constructor() {
+
+  }
 
   ngOnInit() {
+    if (window.innerWidth < 768) {
+      this.isMobileResolution = false;
+    } else {
+      this.isMobileResolution = true;
+    }
+  }
+
+  public getIsMobileResolution(): boolean {
+    return this.isMobileResolution;
   }
 
 }

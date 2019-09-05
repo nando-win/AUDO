@@ -9,19 +9,19 @@
             </mat-card-header>
             <mat-card-content>
                 <mat-form-field>
-                    <input matInput placeholder="Digite o código do exame">
+                    <input [(ngModel)]="usuario.codigo" id="codigo" type="text" matInput placeholder="Digite o código do exame">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
-                    <input matInput placeholder="Digite a senha de acesso">
+                    <input [(ngModel)]="usuario.senha" id="senha" type="password" matInput placeholder="Digite a senha de acesso">
                 </mat-form-field>
             </mat-card-content>
             <mat-card-actions>
                 <!-- <button mat-raised-button>Entrar</button>
                 <button mat-button>entrar</button> -->
-                <a routerLink="lista">Lista</a>
+                <!-- <a routerLink="lista">Lista</a> -->
 
-                <button class="btEntrar" (click)="logar()" mat-button>ENTRAR</button>
+                <button class="btEntrar" (click)="autenticado(usuario)" mat-button>ENTRAR</button>
             </mat-card-actions>
         </mat-card>    
 
@@ -29,7 +29,7 @@
             Pacientes em caso de dúvidas e/ou problemas de acesso, entrar em contato com nossa central de atendimento pelo telefone (85) XXXX-XXXX.
         </div>
 
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
 
     </body>
 
