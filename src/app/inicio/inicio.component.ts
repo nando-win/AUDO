@@ -12,12 +12,11 @@ export class InicioComponent implements OnInit {
 
   private usuarioAutenticado = false;
 
+  private isMobileResolution: boolean;
+
   private usuario: Usuario = new Usuario();
 
   constructor( private routerMod: RouterModule, private router: Router) { }
-
-  ngOnInit() {
-  }
 
   logar() {
     console.log('Logando!!!');
@@ -36,4 +35,15 @@ export class InicioComponent implements OnInit {
     }
   }
 
+  ngOnInit() {
+    if (window.innerWidth < 768) {
+      this.isMobileResolution = false;
+    } else {
+      this.isMobileResolution = true;
+    }
+  }
+
+  public getIsMobileResolution(): boolean {
+    return this.isMobileResolution;
+  }
 }

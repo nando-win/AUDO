@@ -32,7 +32,7 @@ div, mat-card {
     text-align: center;
     width: 500px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .mat-card {
@@ -41,18 +41,39 @@ div, mat-card {
 }
 
 .footer {
+    margin-top: 40px;
+    width: 35%;
+    text-align: left;
+    font-size: 18px
+}
+
+.footerMob {
+    margin-top: 20px;
+    width: 70%;
+    text-align: left;
+    color: rgb(175, 175, 175);
+}
+
+.footerMobTop {
     margin-top: 50px;
-    width: 50%;
-    text-align: left
+    width: 70%;
+    text-align: left;
+    color: rgb(175, 175, 175);
+}
+
+a {
+    color: rgb(175, 175, 175);
 }
 
 img {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    width: 45%
     /* margin-top: -50% */
 }
 
 .mat-card-content {
-    width: 100%
+    width: 100%;
+    box-shadow: none
 }
 
 .mat-form-field {
@@ -60,5 +81,5 @@ img {
 }
 
 mat-card-actions {
-    margin-top: 10%
+    margin-top: 10%;
 }

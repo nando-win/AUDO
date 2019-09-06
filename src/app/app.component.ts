@@ -10,8 +10,8 @@ export class AppComponent implements OnInit {
   title = 'AUDO';
 
   constructor( private router: Router) {
-    // this.router.navigate(['/inicio']);
-    this.router.navigate(['/lista']);
+    this.router.navigate(['/inicio']);
+    // this.router.navigate(['/lista']);
   }
 
   ngOnInit() {

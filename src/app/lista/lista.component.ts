@@ -12,7 +12,7 @@ export class ListaComponent implements OnInit {
   private isMobileResolution: boolean;
 
 medicos = [
-    {nome: 'Fernando'},
+    {nome: 'Fernando Winston Cavalcante Bezerra'},
     {nome: 'Winston'},
   ];
 

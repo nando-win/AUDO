@@ -17,19 +17,17 @@
                 </mat-form-field>
             </mat-card-content>
             <mat-card-actions>
-                <!-- <button mat-raised-button>Entrar</button>
-                <button mat-button>entrar</button> -->
-                <!-- <a routerLink="lista">Lista</a> -->
-
                 <button class="btEntrar" (click)="autenticado(usuario)" mat-button>ENTRAR</button>
             </mat-card-actions>
         </mat-card>    
 
-        <div class="footer">
+        <div *ngIf="isMobileResolution" class="footer">
             Pacientes em caso de dúvidas e/ou problemas de acesso, entrar em contato com nossa central de atendimento pelo telefone (85) XXXX-XXXX.
         </div>
 
-        <!-- <router-outlet></router-outlet> -->
+        <div *ngIf="isMobileResolution === false" class="footerMobTop"><a href="">Não consigo acessar meus exames</a></div>
+
+        <div *ngIf="isMobileResolution === false" class="footerMob">Ao clicar em 'Entrar' você está concordando com os nossos <a href="">Termos de Serviço</a>habitant neque class nostra vehicula posuere vestibulum cubilia convallis vivamus, primis.</div>
 
     </body>
 
